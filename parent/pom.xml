@@ -50,6 +50,9 @@
 		<!-- Force encoding to UTF-8 (bug on OS X) -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<surefire.reportFormat>plain</surefire.reportFormat>
+		<surefire.useFile>false</surefire.useFile>
+		<surefire.version>2.19.1</surefire.version>
 	</properties>
 
 	<prerequisites>
@@ -130,12 +133,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-report-plugin</artifactId>
-					<version>2.6</version>
+					<version>${surefire.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.6</version>
+					<version>${surefire.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -234,7 +237,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.1</version>
+					<version>3.5.1</version>
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
@@ -425,7 +428,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>failsafe-maven-plugin</artifactId>
-					<version>2.4.3-alpha-1</version>
+					<version>${surefire.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -618,6 +621,10 @@
 
 
 	<repositories>
+		<repository>
+			<id>jfrog-oss</id>
+			<url>https://oss.jfrog.org/repo/</url>
+		</repository>
 		<repository>
 			<id>cdi.advocate</id>
 			<name>CDI Advocacy</name>

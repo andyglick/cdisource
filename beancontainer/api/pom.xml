@@ -17,7 +17,6 @@
       <maven>3.0</maven>
    </prerequisites>
 
-
    <!-- Minimal project metadata, for more see parent/pom.xml -->
    <description>Base API for common bean container</description>
    <dependencies>
@@ -35,7 +34,5 @@
    		<scope>test</scope>
    	</dependency>
    </dependencies>
-
-
 
 </project>
