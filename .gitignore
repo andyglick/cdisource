@@ -7,3 +7,9 @@ release.properties
 *.releaseBackup
 *.versionsBackup
 
+*.iml
+*.ipr
+*.iws
+.idea/
+atlassian-ide-plugin.xml
+

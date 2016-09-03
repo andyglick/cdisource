@@ -14,7 +14,7 @@
 
 	<!-- Fix from Mark Struberg for @Spring running in OWB. -->
     <properties>
-        <openwebbeans.version>1.1.1-SNAPSHOT</openwebbeans.version>
+        <openwebbeans.version>1.1.2</openwebbeans.version>
     </properties>
 
     <prerequisites>
